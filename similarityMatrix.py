@@ -25,7 +25,6 @@ print(headers.shape)
 similarities = pd.DataFrame(0, index=headers, columns=headers, dtype=float)
 
 
-
 raw_similarities = pd.read_csv(similarities_path, header=None, usecols=[0,1,3])
 
 print(raw_similarities.columns.values)
@@ -51,11 +50,11 @@ print(similarities.at["CCMSLIB00000579427.ms", "CCMSLIB00000579423.ms"])
 print(similarities)
 
 # Plot rudimentary heatmap for bigger picture.
-# fig, ax = plt.subplots()
-# im = ax.imshow(similarities)
-#
-# fig.tight_layout()
-# plt.show()
+fig, ax = plt.subplots()
+im = ax.imshow(similarities)
+
+fig.tight_layout()
+plt.show()
 
 # Test to ensure that molecules aren't scoring high with themselves.
 for h in headers:
@@ -70,3 +69,6 @@ print(np_matrix.shape)
 print(np_matrix.dtype)
 
 print(np_matrix)
+
+print(np.count_nonzero(np_matrix))
+print(np_matrix.size)
