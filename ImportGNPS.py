@@ -3,8 +3,8 @@ import matplotlib as plt
 from itertools import islice
 import os
 
-datapath = "E:\\Development Project\\Data\\GNPS Python Test"
-binned_datapath = "E:\\Development Project\\Data\\GNPS Python Test Binned"
+datapath = "E:\\Development Project\\Data\\GNPS"
+binned_datapath = "E:\\Development Project\\Data\\GNPS Python Binned"
 testpath = "E:\\Development Project\\Data\\GNPS\\CCMSLIB00000004552.ms"
 
 MAX_MASS = 1000  # Maximum fragment size in Daltons

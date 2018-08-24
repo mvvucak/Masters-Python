@@ -18,6 +18,7 @@ def get_molecule_names():
         headers[counter] = file
         counter = counter + 1
 
+
 get_molecule_names()
 print(headers)
 print(headers.shape)
